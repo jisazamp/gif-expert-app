@@ -7,12 +7,12 @@ const App = () => {
   return (
     <div className="container mt-3">
       {/* title */}
-      <h1>Gif Expert</h1>
+      <h1 className="mb-3">Gif Expert</h1>
       {/* input */}
-      <AddCategory />
+      <AddCategory setCategories={setCategories} />
 
       {/* listado de gifs */}
-      <ol>
+      <ol className="mt-3">
         {categories.map((c) => (
           <li key={c}>{c}</li>
         ))}
