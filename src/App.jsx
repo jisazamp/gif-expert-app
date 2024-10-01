@@ -9,7 +9,7 @@ const App = () => {
       {/* title */}
       <h1 className="mb-3">Gif Expert</h1>
       {/* input */}
-      <AddCategory setCategories={setCategories} />
+      <AddCategory categories={categories} setCategories={setCategories} />
 
       {/* listado de gifs */}
       <ol className="mt-3">

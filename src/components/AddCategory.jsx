@@ -1,13 +1,14 @@
 import { useState } from "react";
 
-export const AddCategory = ({ setCategories }) => {
+export const AddCategory = ({ categories, setCategories }) => {
   const [searchValue, setSearchValue] = useState("");
 
   const onInputChange = (event) => setSearchValue(event.target.value);
 
   const onCategorySubmit = () => {
     if (searchValue.trim().length <= 1) return;
-    setCategories((categories) => [...categories, searchValue]);
+    if (categories.includes(searchValue.trim())) return;
+    setCategories((categories) => [...categories, searchValue.trim()]);
     setSearchValue("");
   };
 
