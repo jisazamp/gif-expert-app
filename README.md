@@ -84,9 +84,3 @@ Esto iniciará el servidor de desarrollo y podrás acceder a la aplicación en t
 ## Licencia
 
 Este proyecto está bajo la licencia MIT. Siente libre de clonar, modificar y utilizar este código en tus propios proyectos.
-```
-
-### Resumen de pasos importantes:
-1. **Obtener una API Key** de Giphy y configurar la variable de entorno en `.env.local`.
-2. **Instalar dependencias** del proyecto utilizando `npm` o `yarn`.
-3. **Ejecutar el proyecto** localmente con `npm run dev` o `yarn dev`.
